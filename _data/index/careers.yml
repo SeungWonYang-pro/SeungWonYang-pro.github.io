@@ -1,0 +1,49 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+
+- name:
+    detail: Daeryun Middle School
+    i18n: company_a
+  desc:
+    detail: I graduated from Daeryun Middle School in Daegu
+    i18n: company_a_desc
+  date:
+    detail: Mar. 2013
+    i18n: company_a_date
+  job:
+    detail: Middle School Student
+    i18n: company_a_job
+  icon: fa-plus-square
+  present: true
+
+- name:
+    detail: Daeryun High School
+    i18n: company_b
+  desc:
+    detail: I graduated from Daeryun High School in Daegu as a science and engineering student.
+    i18n: company_b_desc
+  date:
+    detail: Mar. 2016
+    i18n: company_b_date
+  job:
+    detail: High School Student
+    i18n: company_b_job
+  icon: fa-plus-square
+
+
+- name:
+    detail: SungKyunKwan University(SKKU)
+    i18n: company_c
+  desc:
+    detail: "My major is Computer of Computing. The core major courses I took are Operating System, Computer Security, System Program, and Computer Architecture. I am doing research as an undergraduate research student in the system software laboratory."
+    i18n: company_c_desc
+  date:
+    detail: Mar. 2019
+    i18n: company_c_date
+  job:
+    detail: Undergraduate research student
+    i18n: company_c_job
+  icon: fa-plus-square
+
+
+

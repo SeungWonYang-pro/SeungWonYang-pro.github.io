@@ -1,0 +1,17 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Food Trip
+  i18n: 
+  gh_user: SeungWonYang-pro
+  repo: 
+  img: /static/assets/img/landing/foodTrip.png
+  desc: This project is my first web project using ReactJS and KAKAO MAP API. https://foodtrip.swygbro.com/
+
+- name: SWEA Pro Certificate 
+  i18n: 
+  gh_user: SeungWonYang-pro
+  repo: 
+  img: /static/assets/img/landing/swea.png
+  desc: This certification proves that I passed the pro level of the coding competency test hosted by Samsung Electronics.
+
