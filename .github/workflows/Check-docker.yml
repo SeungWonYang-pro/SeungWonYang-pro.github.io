@@ -1,20 +1,24 @@
 name: Checking In Docker
-
+#이 Git Hub Action Workflow의 이름이다.
 on:
   push:
     branches: [ "main" ]
+  # push를 할 때 main branch로 해야함을 명시한다.
   pull_request:
     branches: [ "main" ]
+  # pull_request를 할 때 main branch로 해야함을 명시한다.
 
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
+jobs:    
+# workflow의 핵심 요소들을 의미한다.
+  build: 
+    runs-on: ubuntu-latest   
+    # ubuntu-latest 에서 실행돼야하는 것을 의미한다.
 
     steps:
     - uses: actions/checkout@v3
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
-        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        -v ${{ github.workspace }}:/srv/jekyll 
+        -v ${{ github.workspace }}/_site:/srv/jekyll/_site jekyll/builder:latest 
+        /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
