@@ -12,7 +12,7 @@ jobs:
 # workflow의 핵심 요소들을 의미한다.
   build: 
     runs-on: ubuntu-latest   
-    # ubuntu-latest 에서 실행돼야하는 것을 의미한다.
+    # build 할 때 ubuntu-latest 에서 실행돼야하는 것을 의미한다.
 
     steps:
     - uses: actions/checkout@v3
