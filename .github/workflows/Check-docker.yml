@@ -16,8 +16,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    # actions 디렉토리 안에있는 checkout version 3 를 사용함을 의미한다.
     - name: Build the site in the jekyll/builder container
+    # 이 action의 이름을 의미한다.
       run: |
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site jekyll/builder:latest \
         /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+        # 실제로 docker를 실행해서 jekyll을 사용하여 나의 웹사이트를 Build 해보는 Command를 실행하는 것을 의미한다.
